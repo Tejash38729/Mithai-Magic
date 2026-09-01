@@ -1,14 +1,14 @@
 :root {
-    --primary-maroon: #6e0d1b;
-    --dark-maroon: #4a0610;
+    --primary-maroon: #7a0c1b;
+    --dark-maroon: #4a050f;
     --accent-gold: #e5a93b;
     --bright-gold: #ffc857;
     --soft-cream: #fff9f0;
     --card-bg: #ffffff;
     --text-dark: #231f20;
-    --text-muted: #6b6364;
-    --shadow-soft: 0 10px 30px rgba(0,0,0,0.08);
-    --shadow-hover: 0 15px 40px rgba(110, 13, 27, 0.15);
+    --text-muted: #665e5f;
+    --shadow-soft: 0 10px 30px rgba(0,0,0,0.07);
+    --shadow-hover: 0 14px 35px rgba(122, 12, 27, 0.14);
     --border-radius: 12px;
 }
 
@@ -36,7 +36,7 @@ h1, h2, h3, .brand-title {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
     padding: 0.8rem 1.5rem;
@@ -69,7 +69,7 @@ h1, h2, h3, .brand-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(110, 13, 27, 0.3);
+    box-shadow: 0 4px 10px rgba(122, 12, 27, 0.25);
     border: 2px solid var(--accent-gold);
 }
 
@@ -94,7 +94,6 @@ h1, h2, h3, .brand-title {
     font-size: 0.75rem;
     color: var(--accent-gold);
     font-weight: 600;
-    letter-spacing: 0.5px;
 }
 
 .nav-links {
@@ -151,7 +150,7 @@ h1, h2, h3, .brand-title {
 .btn-primary:hover {
     background: var(--dark-maroon);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(110, 13, 27, 0.3);
+    box-shadow: 0 5px 15px rgba(122, 12, 27, 0.3);
 }
 
 .btn-gold {
@@ -185,7 +184,7 @@ h1, h2, h3, .brand-title {
 .hero {
     position: relative;
     padding: 100px 20px 120px;
-    background: linear-gradient(rgba(45, 4, 10, 0.8), rgba(45, 4, 10, 0.8)), url('https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=1600') center/cover;
+    background: linear-gradient(rgba(45, 5, 12, 0.82), rgba(45, 5, 12, 0.82)), url('https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?q=80&w=1600') center/cover;
     color: white;
     text-align: center;
     display: flex;
@@ -218,7 +217,7 @@ h1, h2, h3, .brand-title {
 
 .hero-desc {
     font-size: 1.1rem;
-    color: #f1dfd6;
+    color: #f5e4dd;
     margin-bottom: 2rem;
 }
 
@@ -309,7 +308,7 @@ h1, h2, h3, .brand-title {
 .tab-btn {
     padding: 8px 20px;
     border-radius: 20px;
-    background: #eee;
+    background: #e8e2dc;
     border: none;
     font-weight: 600;
     cursor: pointer;
@@ -323,7 +322,7 @@ h1, h2, h3, .brand-title {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
 }
 
@@ -334,7 +333,11 @@ h1, h2, h3, .brand-title {
     box-shadow: var(--shadow-soft);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #f0e6e6;
+    border: 1px solid #eee;
+}
+
+.highlight-card {
+    border: 2px solid var(--accent-gold);
 }
 
 .menu-card:hover {
@@ -348,19 +351,23 @@ h1, h2, h3, .brand-title {
     right: 12px;
     background: var(--accent-gold);
     color: #fff;
-    padding: 4px 10px;
+    padding: 4px 12px;
     font-size: 0.75rem;
     font-weight: bold;
     border-radius: 12px;
 }
 
+.card-badge.hot-badge {
+    background: #d9381e;
+}
+
 .card-img {
-    height: 180px;
-    background: #fdf2e9;
+    height: 160px;
+    background: #fcf4eb;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--primary-maroon);
 }
 
@@ -448,7 +455,6 @@ h1, h2, h3, .brand-title {
     color: #fff;
     padding: 30px;
     border-radius: var(--border-radius);
-    position: relative;
     border: 2px solid var(--accent-gold);
 }
 
@@ -480,11 +486,11 @@ h1, h2, h3, .brand-title {
 .info-item {
     display: flex;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .info-item i {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--accent-gold);
     margin-top: 3px;
 }
@@ -531,7 +537,7 @@ footer {
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1.2fr;
     gap: 30px;
 }
 
@@ -545,7 +551,10 @@ footer {
 }
 
 .footer-col ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .footer-col ul li a {
