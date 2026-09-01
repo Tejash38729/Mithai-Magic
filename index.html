@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithai Magic | Authentic Sweets, Namkeen & Fresh Dairy - Charholi Budruk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="brand-logo">
+                <div class="logo-badge">MM</div>
+                <div class="brand-text">
+                    <span class="brand-title">MITHAI MAGIC</span>
+                    <span class="brand-tagline">Magic In Every Bite</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#menu" class="nav-item">Specialties</a></li>
+                <li><a href="#about" class="nav-item">Our Story</a></li>
+                <li><a href="#contact" class="nav-item">Contact Us</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#menu" class="btn btn-gold">Order Now</a>
+                <button class="mobile-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="sub-badge"><i class="fa-solid fa-award"></i> 100% Pure Ghee & Fresh Dairy</span>
+            <h1 class="hero-heading">Crafting Royal Indian Delights In Charholi</h1>
+            <p class="hero-desc">Experience the authentic melt-in-mouth richness of handcrafted traditional sweets, crispy savory namkeen, and farm-fresh dairy products prepared with purity and devotion.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> Explore Menu</a>
+                <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-location-dot"></i> Visit Shop</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-bar">
+        <div class="feature-item">
+            <i class="fa-solid fa-cow"></i>
+            <div>
+                <h4>100% Pure Milk & Ghee</h4>
+                <p>No adulteration, supreme taste</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-seedling"></i>
+            <div>
+                <h4>Pure Vegetarian</h4>
+                <p>Clean & hygienic preparation</p>
+            </div>
+        </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-box-open"></i>
+            <div>
+                <h4>Festive Gift Packs</h4>
+                <p>Custom boxes for celebrations</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="section-title">
+            <span>Signature Selection</span>
+            <h2>Fresh Flavors For Every Celebration</h2>
+            <div class="gold-divider"></div>
+        </div>
+
+        <div class="category-tabs">
+            <button class="tab-btn active" onclick="filterCategory('all')">All Items</button>
+            <button class="tab-btn" onclick="filterCategory('sweets')">Royal Sweets</button>
+            <button class="tab-btn" onclick="filterCategory('dairy')">Fresh Dairy</button>
+            <button class="tab-btn" onclick="filterCategory('namkeen')">Crispy Namkeen</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-card" data-category="sweets">
+                <div class="card-badge">Bestseller</div>
+                <div class="card-img placeholder-sweet-1">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Kaju Katli (Pure Kaju)</h3>
+                    <p>Diamond-cut rich cashew paste infused with subtle cardamom freshness.</p>
+                    <div class="card-footer">
+                        <span class="price">Freshly Made</span>
+                        <a href="https://wa.me/919999999999?text=Hi%20Mithai%20Magic,%20I%20want%20to%20order%20Kaju%20Katli" target="_blank" class="order-btn"><i class="fa-brands fa-whatsapp"></i> Order</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="sweets">
+                <div class="card-badge">Pure Ghee</div>
+                <div class="card-img placeholder-sweet-2">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Desi Ghee Motichoor Ladoo</h3>
+                    <p>Fine gram flour pearls delicately fried in shuddh ghee with dry fruits.</p>
+                    <div class="card-footer">
+                        <span class="price">Traditional Taste</span>
+                        <a href="https://wa.me/919999999999?text=Hi%20Mithai%20Magic,%20I%20want%20to%20order%20Motichoor%20Ladoo" target="_blank" class="order-btn"><i class="fa-brands fa-whatsapp"></i> Order</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="dairy">
+                <div class="card-badge">Daily Fresh</div>
+                <div class="card-img placeholder-dairy-1">
+                    <i class="fa-solid fa-glass-water"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Malai Paneer & Shrikhand</h3>
+                    <p>Ultra-soft fresh cottage cheese & creamy kesar elaichi shrikhand.</p>
+                    <div class="card-footer">
+                        <span class="price">Farm Fresh Daily</span>
+                        <a href="https://wa.me/919999999999?text=Hi%20Mithai%20Magic,%20I%20want%20to%20order%20Fresh%20Dairy%20Products" target="_blank" class="order-btn"><i class="fa-brands fa-whatsapp"></i> Order</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="namkeen">
+                <div class="card-badge">Snack Special</div>
+                <div class="card-img placeholder-namkeen-1">
+                    <i class="fa-solid fa-fire-burner"></i>
+                </div>
+                <div class="card-body">
+                    <h3>Special Farsan & Dhokla</h3>
+                    <p>Crispy spicy mixtures, freshly steamed sponge dhokla, and hot samosas.</p>
+                    <div class="card-footer">
+                        <span class="price">Crispy & Crunchy</span>
+                        <a href="https://wa.me/919999999999?text=Hi%20Mithai%20Magic,%20I%20want%20to%20order%20Snacks%20and%20Namkeen" target="_blank" class="order-btn"><i class="fa-brands fa-whatsapp"></i> Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="sub-badge">Tradition of Purity</span>
+                <h2>Bringing Magic to Every Sweet Memory</h2>
+                <p>Welcome to <strong>Mithai Magic</strong>, your neighborhood confectionery and dairy destination in Charholi Budruk, Pune. We take pride in preserving age-old recipes, using only unadulterated milk, premium dry fruits, and the finest desi ghee.</p>
+                <p>From festival celebrations and family functions to daily fresh dairy essentials, our commitment is simple: <strong>unmatched hygiene, authentic sweetness, and heartfelt hospitality.</strong></p>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Vegetarian & Hygienic</p>
+                    </div>
+                    <div class="stat">
+                        <h3>30+</h3>
+                        <p>Sweets & Snacks</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Daily</h3>
+                        <p>Fresh Stock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card-visual">
+                <div class="quote-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p>"True sweetness isn't just about sugar; it’s about authentic ghee, the finest ingredients, and true passion."</p>
+                    <strong>- Mithai Magic Promise</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="section-title">
+            <span>Get in Touch</span>
+            <h2>Visit Us in Charholi Budruk</h2>
+            <div class="gold-divider"></div>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info-card">
+                <h3>Store Information</h3>
+                <p class="info-desc">Feel free to drop by for fresh batches or order custom festive gift hampers for your family and corporate events.</p>
+                
+                <div class="info-item">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <div>
+                        <strong>Store Location:</strong>
+                        <p>Mithai Magic, Charholi Budruk, Pune, Maharashtra - 412105</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <strong>Opening Hours:</strong>
+                        <p>Monday - Sunday: 7:00 AM – 10:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Customer Support / WhatsApp:</strong>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-box">
+                <h3>Send an Inquiry / Bulk Order</h3>
+                <form id="inquiryForm" onsubmit="handleInquiry(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="e.g. Ramesh Patil" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="e.g. 9876543210" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Requirement / Sweet Request</label>
+                        <textarea id="message" rows="4" placeholder="Tell us what sweets or bulk order you need..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+                    <p id="formFeedback" class="form-feedback"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo-badge sm">MM</div>
+                <h3>Mithai Magic</h3>
+                <p>Pure Sweetness. Pure Heritage. Delivering taste and hygiene in Charholi Budruk, Pune.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Sweets & Snacks</a></li>
+                    <li><a href="#about">About Our Kitchen</a></li>
+                    <li><a href="#contact">Store Location</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#menu">Desi Ghee Sweets</a></li>
+                    <li><a href="#menu">Fresh Kaju Delicacies</a></li>
+                    <li><a href="#menu">Daily Dairy & Paneer</a></li>
+                    <li><a href="#menu">Namkeen & Snacks</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mithai Magic. All Rights Reserved. Charholi Budruk, Pune 412105.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
